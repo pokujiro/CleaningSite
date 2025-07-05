@@ -1,0 +1,17 @@
+/* Google Fontsの読み込みはHTML側で済ませる */
+html {
+  scroll-behavior: smooth;
+}
+
+.scroll-mt-28 {
+  scroll-margin-top: 7rem; /* ヘッダー分オフセット */
+}
+
+/* メディアクエリでヘッダーの高さが変わる場合は調整 */
+@media (max-width: 768px) {
+  .scroll-mt-28 {
+    scroll-margin-top: 5rem;
+  }
+}
+
+/* カード・テーブルなど、Tailwindに上書きしたいときだけ追加 */

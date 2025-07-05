@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>岡クリーニング｜渋谷区で60年、即日仕上げ対応</title>
+  <meta name="description" content="渋谷区道玄坂の岡クリーニング。衣類・寝具・特殊加工も対応。駅近・即日仕上げOK。TEL 03-5321-1234" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="img/favicon.png" />
+  <script defer src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/js/all.min.js"></script>
+  <script defer src="js/main.js"></script>
+</head>
+<body class="bg-gray-50 text-gray-900">
+  <!-- ===== ヘッダー ===== -->
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div class="max-w-4xl mx-auto flex justify-between items-center p-4">
+      <h1 class="text-xl font-bold text-blue-700">岡クリーニング</h1>
+      <nav class="space-x-4 hidden md:block">
+        <a href="#service" class="nav-link hover:text-blue-600">サービス</a>
+        <a href="#price" class="nav-link hover:text-blue-600">料金</a>
+        <a href="#about" class="nav-link hover:text-blue-600">こだわり</a>
+        <a href="#access" class="nav-link hover:text-blue-600">アクセス</a>
+        <a href="#contact" class="nav-link hover:text-blue-600">お問い合わせ</a>
+      </nav>
+      <!-- ハンバーガーメニュー(スマホ)は main.js で制御 -->
+      <button id="nav-toggle" class="block md:hidden text-2xl"><i class="fas fa-bars"></i></button>
+    </div>
+    <nav id="mobile-nav" class="md:hidden bg-white px-4 py-2 hidden">
+      <a href="#service" class="nav-link block py-2">サービス</a>
+      <a href="#price" class="nav-link block py-2">料金</a>
+      <a href="#about" class="nav-link block py-2">こだわり</a>
+      <a href="#access" class="nav-link block py-2">アクセス</a>
+      <a href="#contact" class="nav-link block py-2">お問い合わせ</a>
+    </nav>
+  </header>
+
+  <!-- ===== ヒーロー・キャッチ ===== -->
+  <section class="hero bg-gradient-to-r from-blue-50 to-blue-100 py-12 md:py-20">
+    <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-8 px-4">
+      <div class="md:w-1/2 text-center md:text-left">
+        <h2 class="text-3xl md:text-5xl font-bold mb-2">岡クリーニング</h2>
+        <p class="text-xl text-blue-700 font-semibold mb-4">渋谷区で60年、即日仕上げ対応</p>
+        <p class="mb-6">大切な衣類を最新技術と確かな経験で丁寧に仕上げます。</p>
+        <div class="flex gap-4 justify-center md:justify-start">
+          <a href="#contact" class="bg-blue-600 text-white px-5 py-2 rounded hover:bg-blue-700 transition">お問い合わせ</a>
+          <a href="#price" class="border border-blue-600 text-blue-700 px-5 py-2 rounded hover:bg-blue-100">料金を見る</a>
+        </div>
+      </div>
+      <div class="md:w-1/2">
+        <img src="img/store.png" alt="クリーニング店" class="rounded-lg shadow w-full h-auto" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== サービス ===== -->
+  <section id="service" class="max-w-4xl mx-auto py-12 px-4 scroll-mt-28">
+    <h3 class="text-2xl font-bold mb-8 text-center">サービス内容</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
+        <div class="text-blue-600 text-3xl mb-3"><i class="fas fa-tshirt"></i></div>
+        <h4 class="font-semibold mb-2">衣類クリーニング</h4>
+        <ul class="text-sm list-disc pl-4">
+          <li>ワイシャツ・スーツ・ジャケット</li>
+          <li>コート・ドレス・ニット</li>
+        </ul>
+      </div>
+      <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
+        <div class="text-blue-600 text-3xl mb-3"><i class="fas fa-bed"></i></div>
+        <h4 class="font-semibold mb-2">寝具・大物</h4>
+        <ul class="text-sm list-disc pl-4">
+          <li>布団・毛布・カーペット</li>
+          <li>カーテン・ぬいぐるみ等</li>
+        </ul>
+      </div>
+      <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
+        <div class="text-blue-600 text-3xl mb-3"><i class="fas fa-magic"></i></div>
+        <h4 class="font-semibold mb-2">特殊加工</h4>
+        <ul class="text-sm list-disc pl-4">
+          <li>シミ抜き・撥水・防虫加工</li>
+          <li>集配サービス（地域限定）</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 料金表 ===== -->
+  <section id="price" class="bg-gray-100 py-12 px-4 scroll-mt-28">
+    <div class="max-w-3xl mx-auto">
+      <h3 class="text-2xl font-bold mb-8 text-center">料金表</h3>
+      <table class="w-full bg-white rounded shadow overflow-hidden">
+        <thead class="bg-blue-600 text-white">
+          <tr><th class="py-3 px-4">品目</th><th class="py-3 px-4">料金（税込）</th></tr>
+        </thead>
+        <tbody>
+          <tr class="border-b"><td class="py-3 px-4">ワイシャツ</td><td class="py-3 px-4 text-right">300円〜</td></tr>
+          <tr class="border-b bg-gray-50"><td class="py-3 px-4">ブラウス</td><td class="py-3 px-4 text-right">400円〜</td></tr>
+          <tr class="border-b"><td class="py-3 px-4">スーツ（上下）</td><td class="py-3 px-4 text-right">1,800円〜</td></tr>
+          <tr class="border-b bg-gray-50"><td class="py-3 px-4">コート</td><td class="py-3 px-4 text-right">1,500円〜</td></tr>
+          <tr class="border-b"><td class="py-3 px-4">ニット・セーター</td><td class="py-3 px-4 text-right">800円〜</td></tr>
+          <tr class="border-b bg-gray-50"><td class="py-3 px-4">布団（シングル）</td><td class="py-3 px-4 text-right">3,000円〜</td></tr>
+        </tbody>
+      </table>
+      <div class="text-xs text-gray-500 mt-2">
+        ※素材や汚れ具合により変動します。詳細は店頭でご案内。<br>
+        ※価格は全て税込（2025年4月1日改定）
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 仕上がりの流れ ===== -->
+  <section class="max-w-4xl mx-auto py-12 px-4" id="flow">
+    <h3 class="text-2xl font-bold mb-8 text-center">クリーニングの流れ</h3>
+    <div class="flex flex-col md:flex-row gap-4 md:gap-0 justify-between">
+      <div class="flex-1 bg-white p-4 rounded shadow text-center m-2">
+        <div class="mb-2 text-blue-600"><i class="fas fa-clipboard-check fa-2x"></i></div>
+        <h4 class="font-semibold">受付</h4>
+        <p class="text-sm">衣類をお預かりし状態を確認</p>
+      </div>
+      <div class="flex-1 bg-white p-4 rounded shadow text-center m-2">
+        <div class="mb-2 text-blue-600"><i class="fas fa-tshirt fa-2x"></i></div>
+        <h4 class="font-semibold">クリーニング</h4>
+        <p class="text-sm">最適な方法で丁寧に洗浄</p>
+      </div>
+      <div class="flex-1 bg-white p-4 rounded shadow text-center m-2">
+        <div class="mb-2 text-blue-600"><i class="fas fa-search fa-2x"></i></div>
+        <h4 class="font-semibold">検品</h4>
+        <p class="text-sm">スタッフが仕上がりを確認</p>
+      </div>
+      <div class="flex-1 bg-white p-4 rounded shadow text-center m-2">
+        <div class="mb-2 text-blue-600"><i class="fas fa-hand-holding-heart fa-2x"></i></div>
+        <h4 class="font-semibold">お渡し</h4>
+        <p class="text-sm">きれいになった衣類をお返し</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== こだわり ===== -->
+  <section id="about" class="bg-gray-100 py-12 px-4 scroll-mt-28">
+    <div class="max-w-4xl mx-auto">
+      <h3 class="text-2xl font-bold mb-8 text-center">私たちのこだわり</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white p-5 rounded shadow text-center">
+          <div class="text-blue-600 mb-2"><i class="fas fa-certificate fa-2x"></i></div>
+          <h4 class="font-semibold mb-1">国家資格クリーニング師在籍</h4>
+          <p class="text-sm">素材に合わせた最適処理で高級品も安心</p>
+        </div>
+        <div class="bg-white p-5 rounded shadow text-center">
+          <div class="text-blue-600 mb-2"><i class="fas fa-history fa-2x"></i></div>
+          <h4 class="font-semibold mb-1">創業60年の実績</h4>
+          <p class="text-sm">1965年創業、地域密着の信頼と経験</p>
+        </div>
+        <div class="bg-white p-5 rounded shadow text-center">
+          <div class="text-blue-600 mb-2"><i class="fas fa-bolt fa-2x"></i></div>
+          <h4 class="font-semibold mb-1">即日仕上げ対応</h4>
+          <p class="text-sm">午前受付で夕方仕上げ可能なサービス有</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== お知らせ ===== -->
+  <section class="max-w-3xl mx-auto py-12 px-4 scroll-mt-28" id="news">
+    <h3 class="text-2xl font-bold mb-8 text-center">お知らせ・キャンペーン</h3>
+    <div id="news-list" class="space-y-4">
+      <!-- js/main.js で data/news.json を読み込み動的挿入も可能 -->
+      <!-- ここはmain.jsが自動で生成 -->
+    </div>
+    <p class="text-xs text-gray-500 mt-4 text-center">※最新情報がある場合のみ掲載しています</p>
+  </section>
+
+  <!-- ===== お客様の声 ===== -->
+  <section class="bg-gray-100 py-12 px-4" id="testimonials">
+    <div class="max-w-4xl mx-auto">
+      <h3 class="text-2xl font-bold mb-8 text-center">お客様の声</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white p-5 rounded shadow text-center">
+          <div class="flex text-yellow-400 justify-center mb-2">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="italic text-sm mb-2">「シミ抜きも完璧で、毎回安心してお願いできます。」</p>
+          <p class="text-xs text-gray-600">渋谷区在住 K様</p>
+        </div>
+        <!-- 他2件も追加可 -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 営業時間・アクセス ===== -->
+  <section id="access" class="max-w-4xl mx-auto py-12 px-4 scroll-mt-28">
+    <h3 class="text-2xl font-bold mb-8 text-center">営業時間・アクセス</h3>
+    <div class="md:flex md:gap-8">
+      <div class="flex-1">
+        <h4 class="text-lg font-semibold mb-2 flex items-center"><i class="fas fa-clock text-blue-600 mr-2"></i>営業時間</h4>
+        <table class="mb-4">
+          <tr><td class="pr-2 font-medium">平日</td><td>8:00-19:00</td></tr>
+          <tr><td class="pr-2 font-medium">土曜</td><td>9:00-18:00</td></tr>
+          <tr><td class="pr-2 font-medium">定休日</td><td>日曜・祝日（カレンダー随時更新）</td></tr>
+        </table>
+        <h4 class="text-lg font-semibold mb-2 flex items-center"><i class="fas fa-map-marker-alt text-blue-600 mr-2"></i>住所</h4>
+        <p>〒150-0043<br>東京都渋谷区道玄坂1-1-1 サンシャインビル1F</p>
+        <ul class="list-disc pl-5 text-sm my-2">
+          <li>渋谷駅から徒歩5分</li>
+          <li>店舗前に2台分の専用駐車場あり</li>
+        </ul>
+        <h4 class="text-lg font-semibold mb-2 flex items-center mt-8"><i class="fas fa-phone-alt text-blue-600 mr-2"></i>お問い合わせ</h4>
+        <a href="tel:0353211234" class="text-blue-700 font-bold text-xl hover:underline">03-5321-1234</a>
+        <div class="text-sm text-gray-600 mb-4">営業時間内にお電話ください</div>
+      </div>
+      <div class="flex-1 mt-6 md:mt-0">
+        <!-- Googleマップ埋め込み例 -->
+        <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="300" style="border:0;" allowfullscreen loading="lazy"></iframe>
+        <div class="mt-4">
+          <a href="https://maps.google.com/?q=渋谷区道玄坂1-1-1" target="_blank"
+             class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 inline-flex items-center">
+            <i class="fas fa-directions mr-2"></i>Googleマップでルート検索
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== お問い合わせフォーム ===== -->
+  <section id="contact" class="bg-gray-100 py-12 px-4 scroll-mt-28">
+    <div class="max-w-2xl mx-auto bg-white rounded shadow p-8">
+      <h3 class="text-2xl font-bold mb-8 text-center">お問い合わせ</h3>
+      <form name="contact" method="POST" data-netlify="true">
+        <div class="mb-4">
+          <label for="name" class="block font-medium mb-1">お名前<span class="text-red-600">*</span></label>
+          <input id="name" name="name" required type="text" class="w-full border rounded px-3 py-2" />
+        </div>
+        <div class="mb-4">
+          <label for="email" class="block font-medium mb-1">メールアドレス<span class="text-red-600">*</span></label>
+          <input id="email" name="email" required type="email" class="w-full border rounded px-3 py-2" />
+        </div>
+        <div class="mb-4">
+          <label for="message" class="block font-medium mb-1">お問い合わせ内容<span class="text-red-600">*</span></label>
+          <textarea id="message" name="message" rows="4" required class="w-full border rounded px-3 py-2"></textarea>
+        </div>
+        <button type="submit" class="bg-blue-600 text-white font-semibold px-6 py-2 rounded hover:bg-blue-700 w-full">送信する</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== フッター ===== -->
+  <footer class="bg-white text-gray-500 text-sm text-center py-6 mt-8 border-t">
+    <div class="flex justify-center space-x-4 mb-2">
+      <a href="https://twitter.com/" target="_blank" class="hover:text-blue-400"><i class="fab fa-twitter"></i></a>
+      <a href="https://instagram.com/" target="_blank" class="hover:text-pink-400"><i class="fab fa-instagram"></i></a>
+      <a href="https://goo.gl/maps/..." target="_blank" class="hover:text-green-600"><i class="fab fa-google"></i></a>
+    </div>
+    <div>© 2025 岡クリーニング｜<a href="policy.html" class="hover:underline">プライバシーポリシー</a></div>
+  </footer>
+</body>
+</html>
