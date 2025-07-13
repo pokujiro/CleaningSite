@@ -1,0 +1,24 @@
+[33mcommit a281e81ecbef94fd12f6992c39bb953f6bc7af66[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Pokujiro <yutapokujiro2010@gmail.com>
+Date:   Sat Jul 5 17:08:40 2025 +0900
+
+    First Base
+
+ css/style.css  |  17 [32m+++[m
+ data/news.json |  14 [32m++[m
+ img/store.jpg  | Bin [31m0[m -> [32m19721[m bytes
+ img/store.png  | Bin [31m0[m -> [32m1861446[m bytes
+ index.html     | 257 [32m+++++++++++++++++++++++++++++++++++++[m
+ js/main.js     |  52 [32m++++++++[m
+ style.css      |   0
+ 7 files changed, 340 insertions(+)
+
+[33mcommit 5b19575ae27ca83eab4c1624f45a33582d120c45[m
+Author: Pokujiro <yutapokujiro2010@gmail.com>
+Date:   Fri Jul 4 16:16:57 2025 +0900
+
+    first commit
+
+ index.html | 0
+ style.css  | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
